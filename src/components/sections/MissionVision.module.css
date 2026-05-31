@@ -1,0 +1,69 @@
+.wrapper {
+  background: #fff;
+  border-top: 1.5px solid var(--border);
+  padding: 56px 0;
+}
+
+.mvGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5px;
+  background: var(--border);
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  margin-top: 28px;
+}
+
+.mvBlock {
+  background: #fff;
+  padding: 48px 44px;
+}
+
+.mvBlock h3 {
+  font-size: 20px;
+  color: var(--teal-d);
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--teal-l);
+}
+
+.mvBlock.pink h3 {
+  color: var(--pink-d);
+  border-bottom-color: var(--pink-l);
+}
+
+.mvBlock p {
+  color: var(--mid);
+  font-size: 15px;
+}
+
+.mvList {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  list-style: none;
+}
+
+.mvList li {
+  font-size: 14px;
+  color: var(--mid);
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.mvList li::before {
+  content: "✓";
+  color: var(--pink-d);
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+@media (max-width: 960px) {
+  .mvGrid {
+    grid-template-columns: 1fr;
+  }
+}

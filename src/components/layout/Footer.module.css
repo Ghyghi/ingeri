@@ -1,0 +1,160 @@
+.addressBar {
+  background: var(--dark);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.addrGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.addrBlock {
+  padding: 36px 44px;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.addrBlock:last-child {
+  border-right: none;
+}
+
+.addrBlock h4 {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.abBadge {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 99px;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.abBadge.teal {
+  background: rgba(62, 200, 200, 0.15);
+  color: var(--teal);
+}
+
+.abBadge.pink {
+  background: rgba(244, 114, 168, 0.15);
+  color: var(--pink);
+}
+
+.addrRow {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 6px;
+  align-items: flex-start;
+}
+
+/* Footer */
+.footer {
+  background: var(--dark);
+  color: #fff;
+  padding: 44px 0 24px;
+}
+
+.footGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 36px;
+  max-width: 1160px;
+  margin: 0 auto 36px;
+  padding: 0 28px;
+}
+
+.footBrand p {
+  font-size: 13px;
+  opacity: 0.6;
+  margin-top: 8px;
+  max-width: 240px;
+  line-height: 1.7;
+}
+
+.footLogo {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  font-size: 19px;
+  color: var(--teal);
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.socialLink {
+  font-size: 13px;
+  color: var(--teal);
+  opacity: 0.7;
+  transition: opacity 0.15s;
+}
+
+.socialLink:hover {
+  opacity: 1;
+}
+
+.footCol h4 {
+  font-size: 11px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 12px;
+}
+
+.footCol ul {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  list-style: none;
+}
+
+.footCol ul li a {
+  font-size: 13px;
+  opacity: 0.6;
+  transition: opacity 0.15s;
+  color: #fff;
+}
+
+.footCol ul li a:hover {
+  opacity: 1;
+  color: var(--teal);
+}
+
+.footBottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 18px 28px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  opacity: 0.45;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+@media (max-width: 960px) {
+  .addrGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .footGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .footGrid {
+    grid-template-columns: 1fr;
+  }
+}

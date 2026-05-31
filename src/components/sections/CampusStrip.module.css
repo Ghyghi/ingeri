@@ -1,0 +1,132 @@
+.campusStrip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1.5px solid var(--border);
+}
+
+.csBlock {
+  background: #fff;
+  padding: 36px 44px;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  border-right: 1.5px solid var(--border);
+  position: relative;
+  transition: background 0.18s;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.csBlock:last-child {
+  border-right: none;
+}
+
+.csBlock:hover {
+  background: var(--off);
+}
+
+.csThumb {
+  width: 90px;
+  height: 90px;
+  border-radius: var(--r-md);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.csThumb.teal {
+  background: var(--teal-l);
+  color: var(--teal-d);
+}
+
+.csThumb.pink {
+  background: var(--pink-l);
+  color: var(--pink-d);
+}
+
+.csText {
+  flex: 1;
+}
+
+.csBadge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 99px;
+  margin-bottom: 8px;
+}
+
+.csBadge.teal {
+  background: var(--teal-l);
+  color: var(--teal-d);
+}
+
+.csBadge.pink {
+  background: var(--pink-l);
+  color: var(--pink-d);
+}
+
+.csText h3 {
+  font-size: 17px;
+  margin-bottom: 4px;
+  color: var(--dark);
+}
+
+.csText p {
+  font-size: 13px;
+  color: var(--mid);
+}
+
+.csAge {
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 99px;
+  border: 1.5px solid;
+}
+
+.csAge.teal {
+  color: var(--teal-d);
+  border-color: var(--teal-l);
+}
+
+.csAge.pink {
+  color: var(--pink-d);
+  border-color: var(--pink-l);
+}
+
+.csArrow {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+.csArrow.teal { color: var(--teal); }
+.csArrow.pink { color: var(--pink); }
+
+@media (max-width: 960px) {
+  .campusStrip {
+    grid-template-columns: 1fr;
+  }
+
+  .csBlock {
+    border-right: none;
+    border-bottom: 1.5px solid var(--border);
+  }
+
+  .csBlock:last-child {
+    border-bottom: none;
+  }
+}

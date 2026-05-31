@@ -1,0 +1,404 @@
+.intro {
+  padding: 80px 0 40px;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.altBg {
+  background: var(--off);
+}
+
+/* Mission & Vision */
+.mvGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5px;
+  background: var(--border);
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  margin-top: 44px;
+}
+
+.mvBlock {
+  background: #fff;
+  padding: 44px 38px;
+}
+
+.mvBlock h3 {
+  font-size: 20px;
+  color: var(--teal-d);
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--teal-l);
+}
+
+.mvBlock.pk h3 {
+  color: var(--pink-d);
+  border-bottom-color: var(--pink-l);
+}
+
+.mvBlock p {
+  color: var(--mid);
+  font-size: 15px;
+}
+
+/* Principes */
+.principesGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5px;
+  background: var(--border);
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  margin-top: 44px;
+}
+
+.ppBlock {
+  background: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  transition: background 0.18s;
+}
+
+.ppBlock:hover {
+  background: #f0fbfb;
+}
+
+.pbIcon {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.ppBlock h4 {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--teal-d);
+  margin-bottom: 6px;
+}
+
+.ppBlock:nth-child(even) h4 {
+  color: var(--pink-d);
+}
+
+.ppBlock p {
+  font-size: 11px;
+  color: var(--mid);
+}
+
+/* Domaines */
+.domainesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5px;
+  background: var(--border);
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  margin-top: 44px;
+}
+
+.domBlock {
+  background: #fff;
+  padding: 26px 18px;
+  text-align: center;
+  transition: background 0.18s;
+}
+
+.domBlock:hover {
+  background: #f0fbfb;
+}
+
+.di {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.domBlock h4 {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+/* Leadership */
+.ldGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5px;
+  background: var(--border);
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  margin-top: 44px;
+}
+
+.ldPhoto {
+  background: var(--teal-l);
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--teal-d);
+  position: relative;
+  overflow: hidden;
+}
+
+.ldText {
+  background: #fff;
+  padding: 44px 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+}
+
+.ldText p {
+  color: var(--mid);
+  font-size: 15px;
+}
+
+.ldQuote {
+  background: var(--teal-l);
+  border-radius: var(--r-md);
+  padding: 22px;
+  margin-top: 4px;
+}
+
+.ldQuote p {
+  font-style: italic;
+  color: var(--teal-d) !important;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.ldQuote cite {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--teal-d);
+  font-style: normal;
+}
+
+/* Équipe */
+.equipeGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5px;
+  background: var(--border);
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  margin-top: 44px;
+}
+
+.teamBlock {
+  background: #fff;
+}
+
+.teamPhoto {
+  height: 160px;
+  background: var(--teal-l);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: var(--teal-d);
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+}
+
+.teamBlock:nth-child(even) .teamPhoto {
+  background: var(--pink-l);
+  color: var(--pink-d);
+}
+
+.teamInfo {
+  padding: 16px 18px;
+}
+
+.teamInfo h4 {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.teamInfo p {
+  font-size: 12px;
+  color: var(--mid);
+}
+
+/* Localisations */
+.locsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5px;
+  background: var(--border);
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  margin-top: 44px;
+}
+
+.locBlock {
+  background: #fff;
+}
+
+.locMap {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  border-bottom: 1.5px solid var(--border);
+}
+
+.locMap.teal {
+  background: var(--teal-l);
+  color: var(--teal-d);
+}
+
+.locMap.pink {
+  background: var(--pink-l);
+  color: var(--pink-d);
+}
+
+.locInfo {
+  padding: 26px;
+}
+
+.locInfo h3 {
+  font-size: 17px;
+  color: var(--teal-d);
+  margin-bottom: 8px;
+}
+
+.locDetail {
+  font-size: 13px;
+  color: var(--mid);
+  margin-bottom: 4px;
+}
+
+/* Carrières */
+.carGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5px;
+  background: var(--border);
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  margin-top: 44px;
+}
+
+.carJobs {
+  background: #fff;
+  padding: 36px 30px;
+}
+
+.jobsTitle {
+  font-size: 16px;
+  margin-bottom: 18px;
+  color: var(--mid);
+  font-weight: 600;
+}
+
+.jobRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.jobRow:last-of-type {
+  border-bottom: none;
+}
+
+.jobRow h4 {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.jobRow p {
+  font-size: 12px;
+  color: var(--mid);
+}
+
+.jBadge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 99px;
+  background: var(--teal-l);
+  color: var(--teal-d);
+  white-space: nowrap;
+}
+
+.jBadge.pk {
+  background: var(--pink-l);
+  color: var(--pink-d);
+}
+
+.teamQuote {
+  background: var(--off);
+  border-radius: var(--r-sm);
+  padding: 16px;
+  margin-top: 18px;
+  border-left: 3px solid var(--pink);
+}
+
+.teamQuote p {
+  font-style: italic;
+  color: var(--mid);
+  font-size: 13px;
+}
+
+.tqAuthor {
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 6px;
+  color: var(--pink-d) !important;
+}
+
+.carCta {
+  background: var(--teal);
+  padding: 44px 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 14px;
+}
+
+.carCta h3 {
+  font-size: 21px;
+  color: #fff;
+}
+
+.carCta p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 960px) {
+  .mvGrid,
+  .ldGrid,
+  .locsGrid,
+  .carGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .principesGrid,
+  .equipeGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .domainesGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

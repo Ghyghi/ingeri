@@ -1,0 +1,59 @@
+.sideCta {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+}
+
+.sideBtn {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  padding: 22px 13px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.18s, padding 0.18s;
+  display: block;
+  text-decoration: none;
+}
+
+.sideBtn.teal {
+  background: var(--teal);
+}
+
+.sideBtn.teal:hover {
+  background: var(--teal-d);
+  padding-right: 20px;
+}
+
+.sideBtn.pink {
+  background: var(--pink);
+}
+
+.sideBtn.pink:hover {
+  background: var(--pink-d);
+  padding-right: 20px;
+}
+
+.sideBtn.gold {
+  background: var(--gold);
+}
+
+.sideBtn.gold:hover {
+  background: #c8841a;
+  padding-right: 20px;
+}
+
+@media (max-width: 960px) {
+  .sideCta {
+    display: none;
+  }
+}

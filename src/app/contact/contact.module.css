@@ -1,0 +1,174 @@
+.section {
+  padding: 80px 0;
+}
+
+.tabs {
+  display: flex;
+  border: 1.5px solid var(--border);
+  border-radius: 99px;
+  overflow: hidden;
+  margin-bottom: 36px;
+  width: fit-content;
+}
+
+.tab {
+  padding: 10px 24px;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+  color: var(--mid);
+  transition: 0.18s;
+}
+
+.actTeal { background: var(--teal); color: #fff; }
+.actPink { background: var(--pink); color: #fff; }
+
+.panel {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 1.5px;
+  background: var(--border);
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+}
+
+.formWrap {
+  background: #fff;
+  padding: 40px 36px;
+}
+
+.formWrap h3 {
+  font-size: 19px;
+  color: var(--teal-d);
+  margin-bottom: 18px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px;
+}
+
+.fg {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 13px;
+}
+
+.fg label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.fg input,
+.fg textarea,
+.fg select {
+  padding: 11px 13px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-sm);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  color: var(--dark);
+  background: var(--off);
+  transition: border-color 0.18s;
+}
+
+.fg input:focus,
+.fg textarea:focus,
+.fg select:focus {
+  outline: none;
+  border-color: var(--teal);
+  background: #fff;
+}
+
+.fg textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Contact info panel */
+.cfInfo {
+  background: var(--off);
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cfInfo h3 {
+  font-size: 17px;
+  color: var(--teal-d);
+  margin-bottom: 16px;
+}
+
+.ciRow {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 13px;
+  font-size: 14px;
+  color: var(--mid);
+  align-items: flex-start;
+}
+
+.ciRow strong {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--dark);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.ciSoc {
+  margin-top: 18px;
+  border-radius: var(--r-md);
+  padding: 14px;
+}
+
+.ciSoc p {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.socLinks {
+  display: flex;
+  gap: 8px;
+}
+
+.socLink {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 11px;
+  border: 1.5px solid;
+  border-radius: 99px;
+  transition: 0.15s;
+  text-decoration: none;
+}
+
+.socLink:hover {
+  background: var(--teal);
+  color: #fff;
+  border-color: var(--teal);
+}
+
+@media (max-width: 960px) {
+  .panel {
+    grid-template-columns: 1fr;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+}

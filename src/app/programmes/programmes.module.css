@@ -1,0 +1,190 @@
+.section {
+  padding: 80px 0;
+  background: var(--off);
+}
+
+.tabs {
+  display: flex;
+  border: 1.5px solid var(--border);
+  border-radius: 99px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  width: fit-content;
+}
+
+.tab {
+  padding: 11px 28px;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+  color: var(--mid);
+  transition: 0.18s;
+}
+
+.actTeal {
+  background: var(--teal);
+  color: #fff;
+}
+
+.actPink {
+  background: var(--pink);
+  color: #fff;
+}
+
+.progLayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5px;
+  background: var(--border);
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+}
+
+.progImg {
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  border: 2px dashed;
+  margin: 24px;
+  border-radius: var(--r-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.progImg.teal {
+  background: var(--teal-l);
+  color: var(--teal-d);
+  border-color: var(--teal);
+}
+
+.progImg.pink {
+  background: var(--pink-l);
+  color: var(--pink-d);
+  border-color: var(--pink);
+}
+
+.progInfo {
+  background: #fff;
+  padding: 44px 38px;
+}
+
+.progInfo h2 {
+  font-size: 26px;
+  color: var(--teal-d);
+  margin-bottom: 6px;
+}
+
+.ages {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.ages.teal { color: var(--teal); }
+.ages.pink { color: var(--pink); }
+
+.progInfo > p {
+  color: var(--mid);
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.pillars {
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  margin-bottom: 22px;
+}
+
+.ppRow {
+  display: flex;
+  gap: 14px;
+  padding: 15px 18px;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  align-items: flex-start;
+  transition: background 0.15s;
+}
+
+.ppRow:last-child {
+  border-bottom: none;
+}
+
+.ppRow:hover {
+  background: var(--off);
+}
+
+.ppIcon {
+  font-size: 20px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.ppRow h4 {
+  font-size: 14px;
+  margin-bottom: 2px;
+  color: var(--teal-d);
+}
+
+.ppRow p {
+  font-size: 12px;
+  color: var(--mid);
+}
+
+.calCard {
+  background: var(--teal-l);
+  border-radius: var(--r-sm);
+  padding: 12px 16px;
+  font-size: 13px;
+  color: var(--teal-d);
+  margin-bottom: 20px;
+}
+
+.levels {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+
+.lvPink {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 99px;
+  background: var(--pink-l);
+  color: var(--pink-d);
+}
+
+.lvTeal {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 99px;
+  background: var(--teal-l);
+  color: var(--teal-d);
+}
+
+.lvGold {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 99px;
+  background: var(--gold);
+  color: #fff;
+}
+
+@media (max-width: 960px) {
+  .progLayout {
+    grid-template-columns: 1fr;
+  }
+}

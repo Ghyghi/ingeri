@@ -1,0 +1,162 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  border-bottom: 1.5px solid var(--border);
+  box-shadow: var(--sh-sm);
+  transition: box-shadow 0.2s;
+}
+
+.header.scrolled {
+  box-shadow: 0 4px 20px rgba(62, 200, 200, 0.14);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 28px;
+  height: 70px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoText {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  font-size: 19px;
+  color: var(--teal);
+}
+
+/* Desktop nav links */
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  list-style: none;
+}
+
+.navDd {
+  position: relative;
+}
+
+/* Show dropdown when hovering the LI (covers both trigger and menu) */
+.navDd:hover .ddMenu {
+  display: block;
+}
+
+.navLink {
+  padding: 8px 13px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--mid);
+  border-radius: var(--r-sm);
+  transition: 0.15s;
+  display: block;
+}
+
+.navLink:hover {
+  background: var(--teal-l);
+  color: var(--teal-d);
+}
+
+.caret {
+  font-size: 10px;
+}
+
+.ddMenu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0px); /* flush — no gap so hover doesn't break */
+  left: 0;
+  background: #fff;
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-md);
+  box-shadow: var(--sh-md);
+  min-width: 210px;
+  padding: 6px;
+  z-index: 300;
+  list-style: none;
+}
+
+/* Invisible bridge fills any sub-pixel gap between trigger and menu */
+.ddMenu::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 0;
+  right: 0;
+  height: 8px;
+}
+
+.ddItem {
+  display: block;
+  padding: 9px 13px;
+  font-size: 13px;
+  color: var(--dark);
+  border-radius: var(--r-sm);
+  cursor: pointer;
+}
+
+.ddItem:hover {
+  background: var(--teal-l);
+  color: var(--teal-d);
+}
+
+/* Hamburger */
+.ham {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px;
+}
+
+.ham span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--teal);
+  border-radius: 2px;
+}
+
+/* Mobile menu */
+.mobMenu {
+  background: #fff;
+  border-top: 1.5px solid var(--border);
+  padding: 14px 28px 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobLink {
+  display: block;
+  padding: 11px 0;
+  font-weight: 600;
+  color: var(--dark);
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+
+.mobLink:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 960px) {
+  .navLinks {
+    display: none;
+  }
+
+  .ham {
+    display: flex;
+  }
+}

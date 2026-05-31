@@ -1,0 +1,119 @@
+.section {
+  padding: 80px 0;
+}
+
+.campusGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5px;
+  background: var(--border);
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  margin-top: 44px;
+}
+
+.campusBlock {
+  background: #fff;
+}
+
+.campusImg {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  border-bottom: 1.5px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+
+.campusImg.teal {
+  background: var(--teal-l);
+  color: var(--teal-d);
+}
+
+.campusImg.pink {
+  background: var(--pink-l);
+  color: var(--pink-d);
+}
+
+.campusBody {
+  padding: 36px;
+}
+
+.cbBadge {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 99px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.cbBadge.teal {
+  background: var(--teal-l);
+  color: var(--teal-d);
+}
+
+.cbBadge.pink {
+  background: var(--pink-l);
+  color: var(--pink-d);
+}
+
+.campusBody h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.campusBlock:first-child .campusBody h3 {
+  color: var(--teal-d);
+}
+
+.campusBlock:last-child .campusBody h3 {
+  color: var(--pink-d);
+}
+
+.campusBody p {
+  color: var(--mid);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.cDetail {
+  font-size: 13px;
+  color: var(--mid);
+  display: flex;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.cDetail strong {
+  color: var(--dark);
+  min-width: 76px;
+}
+
+.intlStrip {
+  background: var(--dark);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: var(--r-sm);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.intlStrip strong {
+  color: var(--teal);
+}
+
+@media (max-width: 960px) {
+  .campusGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,60 @@
+.wrapper {
+  background: var(--off);
+  border-top: 1.5px solid var(--border);
+  padding: 56px 0;
+}
+
+.valeursGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5px;
+  background: var(--border);
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  margin-top: 32px;
+}
+
+.vBlock {
+  background: #fff;
+  padding: 32px 22px;
+  text-align: center;
+  transition: background 0.18s;
+}
+
+.vBlock:hover {
+  background: #f0fbfb;
+}
+
+.vIcon {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.vBlock h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--teal-d);
+  margin-bottom: 6px;
+}
+
+.vBlock:nth-child(even) h4 {
+  color: var(--pink-d);
+}
+
+.vBlock p {
+  font-size: 13px;
+  color: var(--mid);
+}
+
+@media (max-width: 960px) {
+  .valeursGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .valeursGrid {
+    grid-template-columns: 1fr;
+  }
+}
