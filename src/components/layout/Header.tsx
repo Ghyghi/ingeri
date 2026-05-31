@@ -47,7 +47,6 @@ const navLinks = [
     ],
   },
   { href: '/contact', label: 'Contactez-nous' },
-  { href: '/espace-parents', label: 'Espace parents' },
 ]
 
 export default function Header() {
