@@ -29,12 +29,22 @@
   line-height: 1.7;
 }
 
+/* Logo: white rounded pill so image pops on frosted background */
 .footLogo {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  font-size: 19px;
-  color: #fff;
-  letter-spacing: -1px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(222, 221, 221, 0.18);
+  border-radius: var(--r-lg);
+  padding: 10px 18px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.14);
+}
+
+.footLogo img {
+  display: block;
+  width: 140px;
+  height: auto;
+  object-fit: contain;
 }
 
 .socials {

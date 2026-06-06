@@ -2,6 +2,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { MessageCircle } from 'lucide-react'
 import { FaFacebook as Facebook, FaInstagram as Instagram } from 'react-icons/fa'
 import { useTranslation } from 'react-i18next'
@@ -14,7 +15,14 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.footGrid}>
         <div className={styles.footBrand}>
-          <div className={styles.footLogo}>INGERi</div>
+          <div className={styles.footLogo}>
+            <Image
+              src="/logo.png"
+              alt="INGERI logo"
+              width={175}
+              height={175}
+            />
+          </div>
           <p>{t('brand.tagline')}</p>
           <div className={styles.socials}>
             <Link href="#" className={styles.socialLink}>

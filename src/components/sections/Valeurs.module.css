@@ -12,12 +12,13 @@
 
 /* Floating white card */
 .vBlock {
-  background: #fff;
+  background: rgba(255,255,255,0.18);
   border-radius: var(--r-lg);
   box-shadow: var(--sh);
   padding: 36px 24px;
   text-align: center;
   transition: box-shadow 0.22s, transform 0.22s;
+  border: 1px solid rgba(255, 255, 255, 0.978);
 }
 
 .vBlock:hover {
@@ -47,15 +48,20 @@
   margin-bottom: 8px;
 }
 
-.vBlock:nth-child(1) h4 { color: var(--teal-d); }
+/* .vBlock:nth-child(1) h4 { color: var(--teal-d); }
 .vBlock:nth-child(2) h4 { color: var(--pink-d); }
 .vBlock:nth-child(3) h4 { color: var(--gold);   }
-.vBlock:nth-child(4) h4 { color: var(--teal-d); }
+.vBlock:nth-child(4) h4 { color: var(--teal-d); } */
+.vBlock:nth-child(1) h4 { color: #ffffffe0; }
+.vBlock:nth-child(2) h4 { color: #ffffffe0; }
+.vBlock:nth-child(3) h4 { color: #ffffffe0;   }
+.vBlock:nth-child(4) h4 { color: #ffffffe0; }
 
 .vBlock p {
   font-size: 13px;
   color: var(--body);
   line-height: 1.6;
+  color: #fff;
 }
 
 @media (max-width: 960px) {

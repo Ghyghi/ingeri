@@ -1,77 +1,65 @@
 .section {
   padding: 80px 0;
-  background: var(--off);
 }
 
+/* Tab switcher — on texture so glass style */
 .tabs {
   display: flex;
-  border: 1.5px solid var(--border);
+  border: 1.5px solid rgba(255,255,255,0.30);
   border-radius: 99px;
   overflow: hidden;
   margin-bottom: 40px;
   width: fit-content;
+  background: rgba(255,255,255,0.12);
 }
 
 .tab {
   padding: 11px 28px;
   font-weight: 900;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   cursor: pointer;
   border: none;
-  background: #fff;
-  color: var(--mid);
+  background: transparent;
+  color: rgba(255,255,255,0.75);
   transition: 0.18s;
   text-transform: capitalize;
   letter-spacing: -1px;
 }
 
-.actTeal {
-  background: var(--teal);
+.tab:hover {
   color: #fff;
+  background: rgba(255,255,255,0.12);
 }
 
-.actPink {
-  background: var(--pink);
-  color: #fff;
-}
+.actTeal { background: var(--teal-d); color: #fff; }
+.actPink { background: var(--pink-d); color: #fff; }
 
+/* Programme layout — floating card */
 .progLayout {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5px;
-  background: var(--border);
-  border: 1.5px solid var(--border);
-  border-radius: var(--r-lg);
+  border-radius: var(--r-xl);
   overflow: hidden;
+  box-shadow: var(--sh-up);
 }
 
+/* Image panel */
 .progImg {
   min-height: 380px;
+  position: relative;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 13px;
   font-weight: 600;
-  border: 2px dashed;
-  margin: 24px;
-  border-radius: var(--r-md);
-  position: relative;
-  overflow: hidden;
 }
 
-.progImg.teal {
-  background: var(--teal-l);
-  color: var(--teal-d);
-  border-color: var(--teal);
-}
+.progImg.teal { background: var(--teal-l); color: var(--teal-d); }
+.progImg.pink { background: var(--pink-l); color: var(--pink-d); }
 
-.progImg.pink {
-  background: var(--pink-l);
-  color: var(--pink-d);
-  border-color: var(--pink);
-}
-
+/* Info panel */
 .progInfo {
   background: #fff;
   padding: 44px 38px;
@@ -89,15 +77,16 @@
   margin-bottom: 18px;
 }
 
-.ages.teal { color: var(--teal); }
-.ages.pink { color: var(--pink); }
+.ages.teal { color: var(--teal-d); }
+.ages.pink { color: var(--pink-d); }
 
 .progInfo > p {
-  color: var(--mid);
+  color: var(--body);
   margin-bottom: 20px;
   font-size: 14px;
 }
 
+/* Pillars list */
 .pillars {
   display: flex;
   flex-direction: column;
@@ -117,30 +106,24 @@
   transition: background 0.15s;
 }
 
-.ppRow:last-child {
-  border-bottom: none;
-}
+.ppRow:last-child { border-bottom: none; }
 
-.ppRow:hover {
-  background: var(--off);
-}
+.ppRow:hover { background: var(--off); }
 
 .ppIcon {
-  font-size: 20px;
-  flex-shrink: 0;
-  margin-top: 1px;
-}
-
-.ppRow h4 {
-  font-size: 14px;
-  margin-bottom: 2px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--teal-l);
   color: var(--teal-d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
-.ppRow p {
-  font-size: 12px;
-  color: var(--mid);
-}
+.ppRow h4 { font-size: 14px; margin-bottom: 2px; color: var(--teal-d); }
+.ppRow p  { font-size: 12px; color: var(--body); }
 
 .calCard {
   background: var(--teal-l);
@@ -151,6 +134,7 @@
   margin-bottom: 20px;
 }
 
+/* Levels */
 .levels {
   display: flex;
   gap: 8px;
@@ -159,34 +143,29 @@
 }
 
 .lvPink {
-  font-size: 12px;
-  font-weight: 700;
-  padding: 5px 12px;
-  border-radius: 99px;
-  background: var(--pink-l);
-  color: var(--pink-d);
+  font-size: 12px; font-weight: 700;
+  padding: 5px 12px; border-radius: 99px;
+  background: var(--pink-l); color: var(--pink-d);
 }
 
 .lvTeal {
-  font-size: 12px;
-  font-weight: 700;
-  padding: 5px 12px;
-  border-radius: 99px;
-  background: var(--teal-l);
-  color: var(--teal-d);
+  font-size: 12px; font-weight: 700;
+  padding: 5px 12px; border-radius: 99px;
+  background: var(--teal-l); color: var(--teal-d);
 }
 
 .lvGold {
-  font-size: 12px;
-  font-weight: 700;
-  padding: 5px 12px;
-  border-radius: 99px;
-  background: var(--gold);
-  color: #fff;
+  font-size: 12px; font-weight: 700;
+  padding: 5px 12px; border-radius: 99px;
+  background: var(--gold-l); color: var(--gold);
 }
 
 @media (max-width: 960px) {
   .progLayout {
     grid-template-columns: 1fr;
+  }
+
+  .progImg {
+    min-height: 240px;
   }
 }

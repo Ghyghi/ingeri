@@ -2,6 +2,7 @@
   padding: 80px 0;
 }
 
+/* Tab switcher */
 .tabs {
   display: flex;
   border: 1.5px solid var(--border);
@@ -9,6 +10,7 @@
   overflow: hidden;
   margin-bottom: 36px;
   width: fit-content;
+  background: rgba(255,255,255,0.15);
 }
 
 .tab {
@@ -18,48 +20,48 @@
   font-size: 13px;
   cursor: pointer;
   border: none;
-  background: #fff;
-  color: var(--mid);
+  background: transparent;
+  color: rgba(255,255,255,0.75);
   transition: 0.18s;
   text-transform: capitalize;
   letter-spacing: -1px;
 }
 
-.actTeal { background: var(--teal); color: #fff; }
-.actPink { background: var(--pink); color: #fff; }
+.tab:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.12);
+}
 
+.actTeal { background: var(--teal-d); color: #fff; }
+.actPink { background: var(--pink-d); color: #fff; }
+
+/* Panel — floating card */
 .panel {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  gap: 1.5px;
-  background: var(--border);
-  border: 1.5px solid var(--border);
-  border-radius: var(--r-lg);
+  border-radius: var(--r-xl);
   overflow: hidden;
+  box-shadow: var(--sh-up);
 }
 
-/* Right column: image stacked above contact info */
+/* Right column */
 .infoCol {
   display: flex;
   flex-direction: column;
 }
 
+/* Image strip */
 .contactImg {
   height: 220px;
   position: relative;
   overflow: hidden;
-  border-bottom: 1.5px solid var(--border);
   flex-shrink: 0;
 }
 
-.contactImg.teal {
-  background: var(--teal-l);
-}
+.contactImg.teal { background: var(--teal-l); }
+.contactImg.pink { background: var(--pink-l); }
 
-.contactImg.pink {
-  background: var(--pink-l);
-}
-
+/* Form panel */
 .formWrap {
   background: #fff;
   padding: 40px 36px;
@@ -92,7 +94,7 @@
 .fg label {
   font-size: 12px;
   font-weight: 700;
-  color: var(--dark);
+  color: var(--teal-d);
 }
 
 .fg input,
@@ -103,7 +105,7 @@
   border-radius: var(--r-sm);
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
-  color: var(--dark);
+  color: var(--body);
   background: var(--off);
   transition: border-color 0.18s;
 }
@@ -112,7 +114,7 @@
 .fg textarea:focus,
 .fg select:focus {
   outline: none;
-  border-color: var(--teal);
+  border-color: var(--teal-d);
   background: #fff;
 }
 
@@ -142,7 +144,7 @@
   gap: 10px;
   margin-bottom: 13px;
   font-size: 14px;
-  color: var(--mid);
+  color: var(--body);
   align-items: flex-start;
 }
 
@@ -150,7 +152,7 @@
   display: block;
   font-size: 11px;
   font-weight: 700;
-  color: var(--dark);
+  color: var(--teal-d);
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
@@ -170,6 +172,7 @@
 .socLinks {
   display: flex;
   gap: 8px;
+  flex-wrap: wrap;
 }
 
 .socLink {
@@ -180,12 +183,15 @@
   border-radius: 99px;
   transition: 0.15s;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .socLink:hover {
-  background: var(--teal);
+  background: var(--teal-d);
   color: #fff;
-  border-color: var(--teal);
+  border-color: var(--teal-d);
 }
 
 @media (max-width: 960px) {

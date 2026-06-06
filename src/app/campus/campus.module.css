@@ -5,18 +5,25 @@
 .campusGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5px;
-  background: var(--border);
-  border: 1.5px solid var(--border);
-  border-radius: var(--r-lg);
-  overflow: hidden;
+  gap: 20px;
   margin-top: 44px;
 }
 
+/* Floating white card */
 .campusBlock {
   background: #fff;
+  border-radius: var(--r-lg);
+  box-shadow: var(--sh);
+  overflow: hidden;
+  transition: box-shadow 0.22s, transform 0.22s;
 }
 
+.campusBlock:hover {
+  box-shadow: var(--sh-up);
+  transform: translateY(-3px);
+}
+
+/* Image area */
 .campusImg {
   height: 250px;
   display: flex;
@@ -24,7 +31,6 @@
   justify-content: center;
   font-size: 13px;
   font-weight: 600;
-  border-bottom: 1.5px solid var(--border);
   position: relative;
   overflow: hidden;
 }
@@ -43,6 +49,7 @@
   padding: 36px;
 }
 
+/* Badge */
 .cbBadge {
   font-size: 11px;
   font-weight: 700;
@@ -54,50 +61,40 @@
   display: inline-block;
 }
 
-.cbBadge.teal {
-  background: var(--teal-l);
-  color: var(--teal-d);
-}
-
-.cbBadge.pink {
-  background: var(--pink-l);
-  color: var(--pink-d);
-}
+.cbBadge.teal { background: var(--teal-l); color: var(--teal-d); }
+.cbBadge.pink { background: var(--pink-l); color: var(--pink-d); }
 
 .campusBody h3 {
   font-size: 22px;
   margin-bottom: 10px;
 }
 
-.campusBlock:first-child .campusBody h3 {
-  color: var(--teal-d);
-}
-
-.campusBlock:last-child .campusBody h3 {
-  color: var(--pink-d);
-}
+.campusBlock:first-child .campusBody h3 { color: var(--teal-d); }
+.campusBlock:last-child  .campusBody h3 { color: var(--pink-d); }
 
 .campusBody p {
-  color: var(--mid);
+  color: var(--body);
   font-size: 14px;
   margin-bottom: 20px;
 }
 
 .cDetail {
   font-size: 13px;
-  color: var(--mid);
+  color: var(--body);
   display: flex;
   gap: 8px;
   margin-bottom: 6px;
+  align-items: flex-start;
 }
 
 .cDetail strong {
-  color: var(--dark);
+  color: var(--teal-d);
   min-width: 76px;
 }
 
+/* International strip */
 .intlStrip {
-  background: var(--dark);
+  background: var(--teal-d);
   color: #fff;
   padding: 12px 20px;
   border-radius: var(--r-sm);
@@ -109,7 +106,7 @@
 }
 
 .intlStrip strong {
-  color: var(--teal);
+  color: var(--teal-l);
 }
 
 @media (max-width: 960px) {
