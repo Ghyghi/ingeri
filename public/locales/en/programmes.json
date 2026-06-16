@@ -5,15 +5,15 @@
   "subtitle": "Tailored educational experiences for every age.",
 
   "tabs": {
-    "creche": "Nursery — 6 to 24 months",
-    "maternelle": "Kindergarten — 3 to 5 years"
+    "creche": "Nursery(6 months – 3 years)",
+    "maternelle": "Kindergarten(3 – 5 years)"
   },
 
   "creche": {
     "imgAlt": "La P'tite Crèche Ingeri",
     "imgLabel": "Photo – nursery activity",
     "name": "La P'tite Crèche Ingeri",
-    "ages": "Children aged 6 to 24 months",
+    "ages": "Children aged 6 months to 3 years",
     "intro": "The first step in a unique journey of discovery. Personalised welcome, respect for each child's own rhythm.",
     "pillars": [
       {

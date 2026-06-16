@@ -9,10 +9,11 @@
     "imgAlt": "La P'tite Crèche Ingeri",
     "imgLabel": "Photo – La P'tite Crèche Ingeri",
     "name": "La P'tite Crèche Ingeri",
-    "desc": "Un espace douillet et sécurisé pour les tout-petits de 6 à 24 mois — conçu pour soutenir chaque étape de leur développement avec amour et douceur.",
-    "ages": "6 – 24 mois",
-    "address": "Kigali, Rwanda – à compléter",
-    "email": "creche@ingeri.rw",
+    "desc": "Un espace douillet et sécurisé pour les tout-petits de 6 mois à 3 ans, conçu pour soutenir chaque étape de leur développement avec amour et douceur.",
+    "ages": "6 mois – 3 ans",
+    "address": "KK 389 St Kagarama, Kicukiro, Kigali, Rwanda",
+    "email": "info@ingerischool.org",
+    "number": "+250 783 812 618",
     "btn": "Visiter le campus"
   },
 
@@ -24,8 +25,9 @@
     "name": "Ingeri International School",
     "desc": "Un campus dynamique pour les enfants de 3 à 5 ans. Nous suivons le programme national français tout en intégrant une pédagogie active et des valeurs chrétiennes dans un environnement international et ouvert.",
     "ages": "3 – 5 ans",
-    "address": "Kigali, Rwanda – à compléter",
-    "email": "maternelle@ingeri.rw",
+    "address": "KK 468 n°12, Kagarama – Kigali, Rwanda",
+    "email": "info@ingerischool.org",
+    "number": "+250 795 826 080",
     "btn": "Visiter le campus"
   },
 

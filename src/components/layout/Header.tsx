@@ -104,6 +104,17 @@ export default function Header() {
             style={{ objectFit: 'contain' }}
           />
         </Link>
+        <div className={styles.ddDivider} />
+        <Link href="/" className={styles.logo}>
+          <Image
+            src="/creche-logo.png"
+            alt="Ingeri"
+            width={150}
+            height={130}
+            style={{ objectFit: 'contain' }}
+          />
+        </Link>
+
 
         {/* Desktop nav */}
         <ul className={styles.navLinks}>

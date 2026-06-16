@@ -5,15 +5,15 @@
   "subtitle": "Des expériences pédagogiques adaptées à chaque âge.",
 
   "tabs": {
-    "creche": "Crèche — 6 à 24 mois",
-    "maternelle": "Maternelle — 3 à 5 ans"
+    "creche": "Crèche(6 mois – 3 ans)",
+    "maternelle": "Maternelle(3 – 5 ans)"
   },
 
   "creche": {
     "imgAlt": "La P'tite Crèche Ingeri",
     "imgLabel": "Photo activité crèche",
     "name": "La P'tite Crèche Ingeri",
-    "ages": "Enfants de 6 à 24 mois",
+    "ages": "Enfants de 6 mois à 3 ans",
     "intro": "La première étape d'une aventure d'éveil unique. Accueil individualisé, respect du rythme de chaque enfant.",
     "pillars": [
       {

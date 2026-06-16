@@ -9,7 +9,7 @@
     "colFees": "Fees / month",
     "note": "* Payment plans are available.",
     "rows": [
-      { "programme": "Nursery (6–24 months)", "frais": "To complete" },
+      { "programme": "Nursery (6 months – 3 years)", "frais": "To complete" },
       { "programme": "Little section (3 years)", "frais": "To complete" },
       { "programme": "Middle section", "frais": "To complete" },
       { "programme": "Upper section", "frais": "To complete" },

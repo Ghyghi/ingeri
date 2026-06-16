@@ -79,15 +79,15 @@
     "titleSpan": "localisations",
     "creche": {
       "name": "La P'tite Crèche Ingeri",
-      "address": "Adresse à compléter – Kigali",
-      "phone": "Tél : à compléter",
-      "hours": "Lun–Ven : 7h00–18h00",
+      "address": "KK 389 St Kagarama, Kicukiro, Kigali, Rwanda",
+      "phone": "Tél : +250 783 812 618",
+      "hours": "Lun–Ven : 7h00–16h00",
       "btn": "Nous contacter"
     },
     "maternelle": {
       "name": "Ingeri International School",
-      "address": "Adresse à compléter – Kigali",
-      "phone": "Tél : à compléter",
+      "address": "KK 468 n°12, Kagarama – Kigali, Rwanda",
+      "phone": "Tél : +250 795 826 080",
       "hours": "Lun–Ven : 7h00–17h30",
       "btn": "Nous contacter"
     }

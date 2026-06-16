@@ -9,7 +9,7 @@
     "colFees": "Frais / mois",
     "note": "* Des facilités de paiement sont possibles.",
     "rows": [
-      { "programme": "Crèche (6–24 mois)", "frais": "À compléter" },
+      { "programme": "Crèche (6 mois – 3 ans)", "frais": "À compléter" },
       { "programme": "Petite section (3 ans)", "frais": "À compléter" },
       { "programme": "Moyenne section", "frais": "À compléter" },
       { "programme": "Grande section", "frais": "À compléter" },

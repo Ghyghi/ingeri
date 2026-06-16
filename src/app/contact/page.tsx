@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next'
 import styles from './contact.module.css'
 
 type Tab = 'creche' | 'maternelle'
-const CONTACT_EMAIL = 'contact@ingeri.rw'
+
 
 export default function ContactPage() {
   const { t } = useTranslation('contact')
@@ -101,6 +101,7 @@ export default function ContactPage() {
 function ContactForm({ campus, accentClass }: { campus: string; accentClass: string }) {
   const { t } = useTranslation('contact')
   const isCreche = campus === 'creche'
+  const CONTACT_EMAIL = isCreche ? 'info@ingerischool.org' : 'maternelle@ingeri.rw'
 
   const ageOptions = t('form.ageOptions', { returnObjects: true }) as string[]
   const sectionOptions = t('form.sectionOptions', { returnObjects: true }) as string[]
@@ -184,7 +185,19 @@ function ContactInfo({
   const isCreche = campus === 'creche'
   const campusName = isCreche ? t('info.crecheName') : t('info.maternelleName')
   const hours = isCreche ? t('info.hoursCreche') : t('info.hoursMaternelle')
-  const email = isCreche ? 'creche@ingeri.rw' : 'maternelle@ingeri.rw'
+  const email = isCreche ? 'info@ingerischool.org' : 'info@ingerischool.org'
+  const address = isCreche ? t('info.crecheAddress') : t('info.maternelleAddress')
+  const socialUrls = isCreche
+  ? {
+      twitter: 'https://x.com/creche_account',
+      instagram: 'https://www.instagram.com/crecheingeri/',
+      whatsapp: 'https://wa.me/2507XXXXXXXX',
+    }
+  : {
+      twitter: 'https://x.com/maternelle_account',
+      instagram: 'https://www.instagram.com/ingeri_international_school/',
+      whatsapp: 'https://wa.me/2507YYYYYYYY',
+    }
 
   return (
     <div className={styles.cfInfo} style={bgStyle}>
@@ -192,7 +205,7 @@ function ContactInfo({
         <h3 style={{ color: headingColor }}>{campusName}</h3>
         <div className={styles.ciRow}>
           <MapPin size={15} />
-          <div><strong>{t('info.address')}</strong>{t('info.addressValue')}</div>
+          <div><strong>{t('info.address')}</strong>{address}</div>
         </div>
         <div className={styles.ciRow}>
           <Phone size={15} />
@@ -209,21 +222,35 @@ function ContactInfo({
       </div>
       <div className={styles.ciSoc} style={{ background: socialBg }}>
         <p style={{ color: socialHeadingColor }}>{t('info.social')}</p>
-        <div className={styles.socLinks}>
-          {[
-            { label: 'X(Twitter)', icon: XTwitter },
-            { label: 'Instagram', icon: Instagram },
-            { label: 'WhatsApp', icon: MessageCircle },
-          ].map(({ label, icon: Icon }) => (
-            <a
-              key={label}
-              href="#"
-              className={`${styles.socLink} ${isCreche ? styles.socTeal : styles.socPink}`}
-            >
-              <Icon size={12} /> {label}
-            </a>
-          ))}
-        </div>
+        {[
+          {
+            label: 'X (Twitter)',
+            icon: XTwitter,
+            href: socialUrls.twitter,
+          },
+          {
+            label: 'Instagram',
+            icon: Instagram,
+            href: socialUrls.instagram,
+          },
+          {
+            label: 'WhatsApp',
+            icon: MessageCircle,
+            href: socialUrls.whatsapp,
+          },
+        ].map(({ label, icon: Icon, href }) => (
+          <a
+            key={label}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${styles.socLink} ${
+              isCreche ? styles.socTeal : styles.socPink
+            }`}
+          >
+            <Icon size={12} /> {label}
+          </a>
+        ))}
       </div>
     </div>
   )

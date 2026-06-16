@@ -3,7 +3,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { MapPin, Mail } from 'lucide-react'
+import { MapPin, Mail, Phone } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import styles from './campus.module.css'
 
@@ -45,6 +45,9 @@ export default function CampusPage() {
               <div className={styles.cDetail}>
                 <Mail size={13} style={{ marginRight: 4, flexShrink: 0 }} /><span>{t('creche.email')}</span>
               </div>
+              <div className={styles.cDetail}>
+                <Phone size={13} style={{ marginRight: 4, flexShrink: 0 }} /><span>{t('creche.number')}</span>
+              </div>
               <Link
                 href="/contact#creche"
                 className="btn btn-teal"
@@ -79,6 +82,9 @@ export default function CampusPage() {
               </div>
               <div className={styles.cDetail}>
                 <Mail size={13} style={{ marginRight: 4, flexShrink: 0 }} /><span>{t('maternelle.email')}</span>
+              </div>
+              <div className={styles.cDetail}>
+                <Phone size={13} style={{ marginRight: 4, flexShrink: 0 }} /><span>{t('maternelle.number')}</span>
               </div>
               <Link
                 href="/contact#maternelle"

@@ -23,9 +23,15 @@ export default function Footer() {
               width={175}
               height={175}
             />
+            <Image
+              src="/creche-logo.png"
+              alt="INGERI creche logo"
+              width={175}
+              height={175}
+            />
           </div>
           <p>{t('brand.tagline')}</p>
-          <div className={styles.socials}>
+          {/* <div className={styles.socials}>
             <Link href="#" className={styles.socialLink}>
               <Facebook size={12} /> Facebook
             </Link>
@@ -35,7 +41,7 @@ export default function Footer() {
             <Link href="#" className={styles.socialLink}>
               <MessageCircle size={12} /> WhatsApp
             </Link>
-          </div>
+          </div> */}
         </div>
 
         <div className={styles.footCol}>
