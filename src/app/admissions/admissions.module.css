@@ -19,7 +19,7 @@
 /* Floating white card */
 .admBlock {
   background: #fff;
-  border-radius: var(--r-lg);
+  /* border-radius: var(--r-lg); */
   box-shadow: var(--sh);
   padding: 34px 28px;
   transition: box-shadow 0.22s, transform 0.22s;
