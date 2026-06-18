@@ -21,21 +21,44 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0 48px;
-  height: 76px;
+  padding: 0 28px;
+  height: 100px;
   gap: 12px;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1px;
   flex-shrink: 0;
+  overflow: hidden;
+}
+
+.logoImg {
+  height: 78px;
+  width: auto;
+  max-width: 150px;
+  object-fit: contain;
+}
+
+.ingeriLogo {
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
+
+.logoDivider {
+  width: 1.5px;
+  height: 36px;
+  flex-shrink: 0;
+  background: linear-gradient(180deg, transparent, #4ecdc4 30%, #f093b0 65%, #f5a623, transparent);
+  border-radius: 2px;
+  opacity: 0.4;
 }
 
 .logoText {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 19px;
   color: var(--teal-d);
   letter-spacing: -1px;
@@ -293,9 +316,9 @@
 }
 
 @media (max-width: 960px) {
-  .nav {
+  /* .nav {
     padding: 0 20px;
-  }
+  } */
 
   .navLinks {
     display: none;
@@ -307,10 +330,12 @@
 
   .ham {
     display: flex;
+    margin-right:20px;
   }
 
+
   /* Hide second logo and its divider on mobile */
-  .desktopOnly {
-    display: none;
-  }
+  /* .desktopOnly {
+    display:none;
+  } */
 }

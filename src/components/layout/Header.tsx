@@ -95,25 +95,25 @@ export default function Header() {
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
       <nav className={styles.nav}>
         {/* Logo — always visible */}
-        <Link href="/" className={styles.logo}>
+        <Link href="/" className={`${styles.logo} ${styles.ingeriLogo}`}>
           <Image
             src="/logo.png"
             alt="Ingeri"
             width={180}
             height={180}
-            style={{ objectFit: 'contain' }}
+            className={styles.logoImg}
           />
         </Link>
 
         {/* Divider + second logo — hidden on mobile */}
-        <div className={`${styles.ddDivider} ${styles.desktopOnly}`} />
+        <div className={`${styles.logoDivider} ${styles.desktopOnly}`} />
         <Link href="/" className={`${styles.logo} ${styles.desktopOnly}`}>
           <Image
             src="/creche-logo.png"
             alt="Ingeri"
             width={180}
             height={160}
-            style={{ objectFit: 'contain' }}
+            className={styles.logoImg}
           />
         </Link>
 
